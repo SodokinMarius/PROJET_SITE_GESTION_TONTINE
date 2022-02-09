@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+form
+{
+    margin: 3% auto;
+    width: 50vw;
+    height: 200vw;
+    
+}
+label
+{
+    margin-left: 3%;
+}
+button
+{
+    margin: 2% 40%;
+    padding: 2% 6% 2% 6%;
+    color: white;
+    background-color:#f36966;
+    border-radius: 2vw;
+    border:1px solid #f36966;
+}
+input
+{
+    border-bottom: 1px solid #f36966;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    height: 4vh;
+}
+.h11{
+    margin-top: 10vh;
+    text-align: center;
+    color: #f36966;
+    font-size: 1.5em;
+    
+}
+@media screen and (max-width: 455px) {
+
+
+.h11{font-size: 1em;}            
+        
+    }
+p{
+    text-align: center;
+}
+legend{
+    text-align: center;
+    color: #f36966;
+}
+
+fieldset
+{
+    border-radius: 3vw;
+    border:1px solid #f36966;
+}
+button:hover
+{
+    color: #f36966;
+    background-color:white;
+    border:1px solid #f36966;
+    transition: 0.5s;
+}
+.fin
+{
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+    font-size: 110%;
+    color: green;
+}

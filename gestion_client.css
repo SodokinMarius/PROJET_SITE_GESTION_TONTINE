@@ -1,0 +1,123 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+/*
+    Mes couleurs :
+    #f36966
+    #cd7a79
+    #a7aaa8
+*/
+
+/*Mise en place du header*/
+header
+{
+    display: flex;
+    background-color: #f36966;
+    align-items: center;
+    color: white;
+}
+header h1
+{
+    margin: auto auto;
+    font-size: 2em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.img1
+{
+    display: left;
+    height:10%;
+    width:10%;
+    border-radius:50%;
+}
+/*Mise en place du banner*/
+
+.banner
+{
+    display: flex;
+    background-image: url("tontine.jpeg");
+    height:40vh ;
+    width: 100%;
+    background-size: cover;
+    align-items: center;
+}
+
+.mutuelle
+{
+    margin: auto auto;
+    color: #f36966;
+    font-size: 2em;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*NOUVEAU CLIENT*/
+.nouveau1
+{
+    margin: 2% auto;
+    background-color: #f36966;
+    font-size: 1.8em;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    height: 10%;
+    width: 40vw;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+}
+p{
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+    font-size: 130%;
+}
+.new
+{
+    text-decoration: none;
+    color: white;
+}
+
+.nouve
+{   
+    color: green;
+    text-align: center;
+    margin: 3% 2%;
+}
+
+@media screen and (max-width: 455px) {
+
+    .mutuelle{font-size: 0.3em; }
+           
+ body{font-size: 0.4em;}
+            
+        
+    }
+    @media screen and (max-width: 305px) {
+
+        .mutuelle{font-size: 0.2em; }
+               
+     body{font-size: 0.2em;}
+                
+            
+        }
+        
+@media screen and (max-width: 790px) {
+    
+    header h1{
+        font-size: 14px;
+    }
+
+    body{
+        font-size: 0.8em;
+    }
+    .mutuelle
+    {
+        font-size: 1em;
+    }
+   .nouveau1
+   {
+       font-size: 1.4em;
+   }
+  }

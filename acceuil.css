@@ -1,0 +1,312 @@
+*{
+    margin: 0px;
+    text-decoration: none;
+    padding: 0%;
+    z-index: 400;
+
+}
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color:#9c8072;
+    overflow: hidden;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    -webkit-transition: all 0.3s 0.1s ease;
+    -moz-transition: all 0.3s 0.1s ease;
+    -o-transition: all 0.3s 0.1s ease;
+    transition: all 0.3s 0.1s ease;
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding:14px 8px;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+    font-weight: bold;
+    
+  }
+  button{
+    -webkit-transition: all 0.5s 0.1s ease;
+    -moz-transition: all 0.5s 0.1s ease;
+    -o-transition: all 0.5s 0.1s ease;
+    transition: all 0.5s 0.1s ease;
+    height: 25%;
+  }
+  
+  
+  /* Add an active class to highlight the current page */
+  .active {
+    background-color: #f36966;
+    color: white;
+  }
+  
+  /* Hide the link that should open and close the topnav on small screens */
+  .topnav .icon {
+    display: none;
+  }
+  
+  /* Dropdown container - needed to position the dropdown content */
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+
+header{
+    padding: 2px;
+    margin-top: 3px;
+    background-attachment: fixed;
+    background-color: #9c8072;
+    display: flex;
+   align-items: center;
+   color:#f36966 ;
+   justify-content: space-between;
+}
+header  img{
+    border-radius: 50%;
+}
+/* Dropdown Button */
+.dropbtn {
+    background-color: #3498DB;
+    color: white;
+   border-radius: 5px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  /* Style the dropdown button to fit inside the topnav */
+  .dropdown .dropbtn {
+    font-size: 17px;
+    border: none;
+    outline: none;
+    color: white;
+   
+    
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  
+  /* Style the dropdown content (hidden by default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Style the links inside the dropdown */
+  .dropdown-content a {
+    float: none;
+    color: black;
+   /* padding: 12px;*/
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  /* Add a dark background on topnav links and the dropdown button on hover */
+  .topnav a:hover, .dropdown:hover .dropbtn {
+    background-color: #f36966;
+    color: white;
+  }
+  
+  /* Add a grey background to dropdown links on hover */
+ 
+  
+  /* Show the dropdown menu when the user moves the mouse over the dropdown button */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+  @media screen and (max-width: 640px) {
+    .topnav a:not(:first-child), .dropdown .dropbtn {
+      display: none;
+    }
+    
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+    .topnav a{
+        padding: 5px;
+    }
+  }
+  
+  /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+  @media screen and (max-width: 640px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .sous-tete{
+      text-align: center;
+      font-size: 0.8em;
+    }
+    header{
+        display:block;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .topnav.responsive .dropdown {float: none;}
+    .topnav.responsive .dropdown-content {position: relative;}
+    .topnav.responsive .dropdown .dropbtn {
+      display: block;
+      width: 100%;
+      text-align: left;
+    }
+  }
+  
+  /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+  .show {display:block;}
+  #cf {
+    margin-left: 25px;
+    position:relative;
+    height:281px;
+    width:450px;
+    margin:0 auto;
+  }
+ 
+  
+  #cf img {
+    position:absolute;
+    left:0;
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+  }
+  
+  #cf img.top:hover {
+    opacity:0;
+  }
+  section {
+      margin-top: 5%;
+      padding-left: 5%;
+      justify-content:space-between;
+      display: flex;
+  }
+ section div img{
+     
+    border: #f36966 ;
+    width: 80%;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 #b17574 , 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.ecrit{
+    text-align: justify;
+}
+.ecrit img{
+    margin-left: 5%;
+    float: left;
+    box-shadow: 0px 15px 16px 0px rgba(0,0,0,0.5);
+}
+.ecrit{
+    text-align: center;
+}
+.titre{
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: #f36966;
+    color: white;
+    display: inline;
+    padding: 15px;
+    border-radius: 5px;
+   
+}
+
+body{
+    font-size: 1.2rem;
+    font-family:  'Arial Narrow', Arial, sans-serif;
+    background-color:  #bbabab7e;
+    width: 100%;
+   
+    overflow-x: hidden;
+   
+}
+.mil{
+
+    padding: 15%;
+    
+}
+footer{
+    background-color: rgb(70, 68, 68);
+    color: whitesmoke;
+    padding: 15px ;
+    font-size: 1.2rem;
+    text-align: center;
+    width: 100%;
+    z-index:500;
+    position:absolute;
+}
+
+
+  
+
+@media screen and (max-width: 790px) {
+    
+    .ecrit{
+        font-size: 14px;
+    }
+    .titre,body,footer{
+        font-size: 1em;
+    }
+    
+
+    section{
+
+        display:block;
+        padding-left: 10%;
+    }
+   
+  }
+
+  @media screen and (max-width: 640px){
+
+
+  }
+  .contact{
+    margin-top: 15%;
+    display: flex;
+    justify-content: space-between;
+    margin: 5% 15% 5% 15%;
+    display: none;
+  }
+
+.f11wifeo_1630699775{width: 40px; height: 40px; background-color: #3B5998; border-radius: 40px; padding: 10px; margin-bottom: 5px;}
+.f11wifeo_1630699775_petit{width: 40px; height: 40px; background-color: #ffffff; border-radius: 40px; -webkit-transition:all 0.2s ease-in;-moz-transition:all 0.2s ease-in;-ms-transition:all 0.2s ease-in;-o-transition:all 0.2s ease-in;transition:all 0.2s ease-in;}
+.f11wifeo_1630699775_petit:hover{-webkit-transform: scale(1.3); -webkit-transition:all 0.2s ease-in;-moz-transform: scale(1.3); -moz-transition:all 0.2s ease-in;-ms-transform: scale(1.3); -ms-transition:all 0.2s ease-in;-o-transform: scale(1.3); -o-transition:all 0.2s ease-in;transform: scale(1.3);transition:all 0.2s ease-in;}
+.f11wifeo_1630699775_img{-webkit-transition:all 0.2s ease-in;-moz-transition:all 0.2s ease-in;-ms-transition:all 0.2s ease-in;-o-transition:all 0.2s ease-in;transition:all 0.2s ease-in;}
+.f11wifeo_1630699775_img:hover{-webkit-transform: scale(0.4); -webkit-transition:all 0.2s ease-in;-moz-transform: scale(0.4); -moz-transition:all 0.2s ease-in;-ms-transform: scale(0.4); -ms-transition:all 0.2s ease-in;-o-transform: scale(0.4); -o-transition:all 0.2s ease-in;transform: scale(0.4);transition:all 0.2s ease-in;}
+.g11wifeo_1630699775{width: 40px; height: 40px; background-color: #dd4b39; border-radius: 40px; padding: 10px; margin-bottom: 5px;}
+.g11wifeo_1630699775_petit{width: 40px; height: 40px; background-color: #ffffff; border-radius: 40px; -webkit-transition:all 0.2s ease-in;-moz-transition:all 0.2s ease-in;-ms-transition:all 0.2s ease-in;-o-transition:all 0.2s ease-in;transition:all 0.2s ease-in;}
+.g11wifeo_1630699775_petit:hover{-webkit-transform: scale(1.3); -webkit-transition:all 0.2s ease-in;-moz-transform: scale(1.3); -moz-transition:all 0.2s ease-in;-ms-transform: scale(1.3); -ms-transition:all 0.2s ease-in;-o-transform: scale(1.3); -o-transition:all 0.2s ease-in;transform: scale(1.3);transition:all 0.2s ease-in;}
+.g11wifeo_1630699775_img{-webkit-transition:all 0.2s ease-in;-moz-transition:all 0.2s ease-in;-ms-transition:all 0.2s ease-in;-o-transition:all 0.2s ease-in;transition:all 0.2s ease-in;}
+.g11wifeo_1630699775_img:hover{-webkit-transform: scale(0.4); -webkit-transition:all 0.2s ease-in;-moz-transform: scale(0.4); -moz-transition:all 0.2s ease-in;-ms-transform: scale(0.4); -ms-transition:all 0.2s ease-in;-o-transform: scale(0.4); -o-transition:all 0.2s ease-in;transform: scale(0.4);transition:all 0.2s ease-in;}
+.t11wifeo_1630699775{width: 40px; height: 40px; background-color: #00aced; border-radius: 40px; padding: 10px; margin-bottom: 5px;}
+.t11wifeo_1630699775_petit{width: 40px; height: 40px; background-color: #ffffff; border-radius: 40px; -webkit-transition:all 0.2s ease-in;-moz-transition:all 0.2s ease-in;-ms-transition:all 0.2s ease-in;-o-transition:all 0.2s ease-in;transition:all 0.2s ease-in;}
+.t11wifeo_1630699775_petit:hover{-webkit-transform: scale(1.3); -webkit-transition:all 0.2s ease-in;-moz-transform: scale(1.3); -moz-transition:all 0.2s ease-in;-ms-transform: scale(1.3); -ms-transition:all 0.2s ease-in;-o-transform: scale(1.3); -o-transition:all 0.2s ease-in;transform: scale(1.3);transition:all 0.2s ease-in;}
+.t11wifeo_1630699775_img{-webkit-transition:all 0.2s ease-in;-moz-transition:all 0.2s ease-in;-ms-transition:all 0.2s ease-in;-o-transition:all 0.2s ease-in;transition:all 0.2s ease-in;}
+.t11wifeo_1630699775_img:hover{-webkit-transform: scale(0.4); -webkit-transition:all 0.2s ease-in;-moz-transform: scale(0.4); -moz-transition:all 0.2s ease-in;-ms-transform: scale(0.4); -ms-transition:all 0.2s ease-in;-o-transform: scale(0.4); -o-transition:all 0.2s ease-in;transform: scale(0.4);transition:all 0.2s ease-in;}
+.y11wifeo_1630699775{width: 40px; height: 40px; background-color: #bb0000; border-radius: 40px; padding: 10px; margin-bottom: 5px;}
+.y11wifeo_1630699775_petit{width: 40px; height: 40px; background-color: #ffffff; border-radius: 40px; -webkit-transition:all 0.2s ease-in;-moz-transition:all 0.2s ease-in;-ms-transition:all 0.2s ease-in;-o-transition:all 0.2s ease-in;transition:all 0.2s ease-in;}
+.y11wifeo_1630699775_petit:hover{-webkit-transform: scale(1.3); -webkit-transition:all 0.2s ease-in;-moz-transform: scale(1.3); -moz-transition:all 0.2s ease-in;-ms-transform: scale(1.3); -ms-transition:all 0.2s ease-in;-o-transform: scale(1.3); -o-transition:all 0.2s ease-in;transform: scale(1.3);transition:all 0.2s ease-in;}
+.y11wifeo_1630699775_img{-webkit-transition:all 0.2s ease-in;-moz-transition:all 0.2s ease-in;-ms-transition:all 0.2s ease-in;-o-transition:all 0.2s ease-in;transition:all 0.2s ease-in;}
+.y11wifeo_1630699775_img:hover{-webkit-transform: scale(0.4); -webkit-transition:all 0.2s ease-in;-moz-transform: scale(0.4); -moz-transition:all 0.2s ease-in;-ms-transform: scale(0.4); -ms-transition:all 0.2s ease-in;-o-transform: scale(0.4); -o-transition:all 0.2s ease-in;transform: scale(0.4);transition:all 0.2s ease-in;}
+.cont_rs_11wifeo_1630699775{width:5px; position:fixed; z-index:-1;/*top:300px*/top:27%;height:60%;right:60px;}
+@media (max-width:500px) and (min-width:1px){.cont_rs_11wifeo_1630699775{display:none;}.contact{display: flex;}}
+@media (max-width:300px) and (min-width:1px){
+
+ .titre{font-size: 0.5rem;
+ }} 
+
